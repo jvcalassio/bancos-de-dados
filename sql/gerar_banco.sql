@@ -39,8 +39,8 @@ CREATE TABLE IF NOT EXISTS `proj_final`.`curso` (
   `titulo` VARCHAR(64) NOT NULL,
   `horas` INT NOT NULL,
   `tamanho_grupos` INT NOT NULL,
-  `criador_id` INT NOT NULL
-  PRIMARY KEY (`id`)),
+  `criador_id` INT NOT NULL,
+  PRIMARY KEY (`id`),
   INDEX `fk_curso_usuario1_idx` (`criador_id` ASC),
   CONSTRAINT `fk_curso_usuario1`
     FOREIGN KEY (`criador_id`)
